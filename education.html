@@ -5,37 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visvas's Education</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon/graduation-cap.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </head>
 
 <body style="text-align: center;">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <input type="button" class="nav-link" id="home" value="Home" onclick="redirect(this.id);" >
-        </li>
-        <li class="nav-item">
-          <input type="button" class="nav-link" id="resume" value="Resume" onclick="redirect(this.id);" >
-        </li>
-        <li class="nav-item">
-          <input type="button" class="nav-link" id="contact" value="Contact" onclick="redirect(this.id);" >
-        </li>
-      </ul>
+  <nav class="navbar  bg-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">LINK</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <input type="button" class="nav-link" id="home" value="Home" onclick="redirect(this.id);" >
+            </li>
+            <li class="nav-item">
+              <input type="button" class="nav-link" id="resume" value="Resume" onclick="redirect(this.id);" >
+            </li>
+            <li class="nav-item">
+              <input type="button" class="nav-link" id="contact" value="Contact" onclick="redirect(this.id);">
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 
